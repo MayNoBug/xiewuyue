@@ -28,20 +28,20 @@
         <el-form-item label="品牌名称" :label-width="formLabelWidth">
           <el-input v-model="form.name" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item label="浮点" :label-width="formLabelWidth">
-          <el-input v-model="form.text" autocomplete="off"></el-input>
+        <el-form-item label="浮点(2位)" :label-width="formLabelWidth">
+          <el-input v-model="form.text1" autocomplete="off" placeholder="非必填的浮点(2位) 字符串规则验证"></el-input>
         </el-form-item>
         <el-form-item label="备注" :label-width="formLabelWidth">
-          <el-input v-model="form.text" autocomplete="off"></el-input>
+          <el-input v-model="form.text2" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="机构地址" :label-width="formLabelWidth">
-          <el-input v-model="form.text" autocomplete="off"></el-input>
+          <el-input v-model="form.text3" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="管理员手机号" :label-width="formLabelWidth">
-          <el-input v-model="form.text" autocomplete="off"></el-input>
+          <el-input v-model="form.text4" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="密码" :label-width="formLabelWidth">
-          <el-input v-model="form.text" autocomplete="off"></el-input>
+          <el-input v-model="form.text5" autocomplete="off"></el-input>
         </el-form-item>
       </el-form>
       <div slot="footer" class="dialog-footer">
@@ -79,7 +79,7 @@ export default {
       this.dialogFormVisible = !this.dialogFormVisible;
     },
     fntrues() {
-      this.dialogFormVisible = false;
+      this.dialogFormVisible = false; 
       if (this.i === 1) return this.handleAdd(); //添加
       this.editHomeIndex();
     },

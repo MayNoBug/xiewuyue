@@ -25,7 +25,6 @@
   </div>
 </template>
 <script>
-// import instance from "../../api/index";
 export default {
   name: "HomeIndex"
 };
